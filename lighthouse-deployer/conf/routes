@@ -1,0 +1,2 @@
+# An example controller showing a sample home page
+POST     /deploy                     @uk.org.godis.deploy.DeploymentController.deploy()
