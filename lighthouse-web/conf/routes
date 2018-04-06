@@ -1,0 +1,8 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET     /                           controllers.Default.redirect(to = "/home")
+GET     /:folder                    @com.godis.lighthouse.web.PageController.page(folder)
+GET     /:folder/*file              @com.godis.lighthouse.web.ResourceController.resource(folder, file)
+GET     /*file                      controllers.Assets.at(file)
